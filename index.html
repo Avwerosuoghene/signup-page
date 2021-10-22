@@ -7,42 +7,49 @@
     <link rel ="stylesheet" href ="CSS/styles.css">
 </head>
 <body >
+    <!-- wrapper for left and right sections-->
     <div class ="wrapper">
-    <section class ="image-area content">
-        <img src = "Assets/Logo2.png" alt ="Teramod logo" >
-        <p>Let's get started turning your dream project into a reality...</p>
-    </section>
-    
-    <section class ="form-field ">
+        <section class ="image-area content">
+            <!-- Teramod Logo-->
+            <img src = "Assets/Logo2.png" alt ="Teramod logo" >
+            <p>Let's get started turning your dream project into a reality...</p>
+        </section>
         
-        <p>Do you have an account?<a href ="#"> Login</a></p>
-        <a href="#">
-            <p>Close</p>
-            <img src ="Assets/Icon material-close.svg">
-        </a>
-        <h1>Create Account</h1>
-        <p>Your one stop for game environment designs</p>
-        <button id = "Google">
-            <img src ="Assets/Group 1.svg">
-            <p>Sign up with Google</p>
-        </button>
-        <button id = "Faceboook">
-            <img src ="Assets/icon awesome-facebook-square.svg">
-            <p>Sign up with Facebook</p>
-        </button>
-        <p>or sign up with</p>
-        <form>
-            <input name = "User Name" placeholder="Username..." type="text">
-            <img src = "Assets/Icon awesome-user-astronaut.svg">
-            <input name = "Email" placeholder="Email..." type="email" pattern=".+@globex\.com">
-            <img src = "Assets/Icon feather-mail.svg">
-            <input name = "Password" placeholder="Password..." type="password" >
-            <img src = "Assets/Icon feather-mail.svg">
-        </form>
-        <button id="Signup">Signup</button>
-        <p>Copyright &copy 2018 - 2021 Teramod, Inc.</p>
-        <button id="Help">Need Help?</button>
-    </section>
-</div>
+        <section class ="form-area">
+            <p>Do you have an account?<a href ="#"> Login</a></p>
+            <a class ="close_container"href="#">
+                <p>Close</p>
+                <img class ="icon" src ="Assets/Icon material-close.svg">
+            </a>
+            <h1>Create Account</h1>
+            <p>Your one stop for game environment designs</p>
+            <button id = "Google" >
+                <img class ="icon" src ="Assets/Group 1.svg">
+                <p>Sign up with Google</p>
+            </button>
+            <button id = "Faceboook">
+                <img class ="icon" src ="Assets/icon awesome-facebook-square.svg">
+                <p>Sign up with Facebook</p>
+            </button>
+            <p>or sign up with</p>
+            <form class="input_container">
+                <img class ="icon " src = "Assets/Icon awesome-user-astronaut.svg">
+                <input name = "User Name" placeholder="Username..." type="text">
+            </form>
+            <form class="input_container">
+                <img class ="icon"  src = "Assets/Icon feather-mail.svg">
+                <input name = "Email" placeholder="Email..." type="email" pattern=".+@globex\.com">
+            </form>
+            <form class="input_container">
+                <img class ="icon" src = "Assets/Icon material-lock.svg">
+                <input name = "Password" placeholder="Password..." type="password" >
+            </form>
+                
+            
+            <button id ="signup">Signup</button>
+            <p>Copyright &copy 2018 - 2021 Teramod, Inc.</p>
+            <button id="Help">Need Help?</button>
+        </section>
+    </div>
 </body>
 </html>

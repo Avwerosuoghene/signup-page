@@ -1,7 +1,7 @@
 /* Global Attributes */
 body {
     font-family: Helvetica, sans-serif;
-    font-size: 19;
+    font-size: 16;
 }
 html{
     /* background-color: blue; */
@@ -9,6 +9,7 @@ html{
     height: 100%;
 }
 
+/** Sections Wrap */
 .wrapper{
     width: 1689px;
     height:820px;
@@ -47,13 +48,101 @@ html{
 }
 
 /* Form Area */
-.form-field{
+.form-area{
     flex:1 0 60%;
-    background-color:red; 
+    background-color:white; 
     border-radius:0 30px 30px 0;
 }
-
-/* Buttons */
-button{
-    width:300px
+.close_container{
+    position: relative;
+    text-decoration: none;
+    color: rgb(97,109,126);
 }
+.close_container p{
+    display: inline;
+   
+}
+.close_container .icon{
+    height: 13px;
+    left: 50px;
+    position: absolute;
+}
+/* Buttons */
+button .icon{
+    height:20px;
+    /* display: inline; */
+    position: relative;
+}
+button{
+    padding:5px 15px ;
+    border: 1px solid grey;
+    border-radius: 20px;
+    position: relative;
+    
+}
+#Google{
+  background-color: rgb(223,73,48);
+}
+#Faceboook{
+    background-color: rgb(80,124,192);
+}
+
+button .icon{
+   vertical-align: middle;
+}
+
+button p {
+   display: inline;
+}
+
+.input_container{
+    width: 300px;
+    height: 30px;
+    position: relative;
+    margin: 20px 0;
+}
+.input_container .icon{
+    position: absolute;
+    z-index: 1;
+    top:25%;
+    left: 10px;
+    height:18px;
+}
+.input_container input{
+    position:absolute;
+   width:100%; 
+   height: 30px;
+   border-radius: 20px;
+   border: 1px solid black;
+   padding: 2px 0;
+}
+.input_container input::placeholder{
+    position: absolute;
+    vertical-align:center;
+    left: 40px;
+    top: 25%;
+}
+
+#signup{
+    background-image: linear-gradient(30deg,rgb(242,159,5),30%,rgb(153,113,40));
+    padding: 7px 40px;
+}
+
+/* form input{
+    display: block;
+    position: relative;
+    
+}
+input::placeholder{
+    position:relative;
+    color:red;
+    left: 8px;
+}
+
+form .icon {
+    position: absolute;
+    z-index: 1;
+    height:17px;
+    align-items: center;  
+}
+ */

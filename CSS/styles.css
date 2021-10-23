@@ -2,6 +2,7 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 16;
+    color:rgb(100, 100, 100)
 }
 html{
     /* background-color: blue; */
@@ -52,20 +53,58 @@ html{
     flex:1 0 60%;
     background-color:white; 
     border-radius:0 30px 30px 0;
+    position: relative;
+}
+.pin_conatiner{
+    position: relative;
+}
+.pin_conatiner p{
+    top:20px;
+    margin:0;
+    margin-left: 2%;
+    position: absolute;
 }
 .close_container{
-    position: relative;
-    text-decoration: none;
-    color: rgb(97,109,126);
-}
-.close_container p{
-    display: inline;
-   
-}
-.close_container .icon{
-    height: 13px;
-    left: 50px;
     position: absolute;
+    color: rgb(97,109,126);
+    height:20px;
+    right:20px;
+    top:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.close_container img{
+padding: 0 10px;
+    
+    
+}
+
+.form_el_cont {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+top:10%;
+right: 25%;
+height: 80%;
+width: 40%;
+} 
+
+.form_el_cont h1{
+    
+    font-size: 40px;
+    font-weight:100;
+    margin:20px;
+    color:rgb(36, 34, 34)
+}
+.form_el_cont h1+p{
+    /* width: 150px; */
+    text-align: center;
+    margin-bottom: 30px;
 }
 /* Buttons */
 button .icon{
@@ -75,10 +114,15 @@ button .icon{
 }
 button{
     padding:5px 15px ;
-    border: 1px solid grey;
+    border: 0.2px solid rgb(158,158,158);
     border-radius: 20px;
     position: relative;
     
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1)
 }
 #Google{
   background-color: rgb(223,73,48);
@@ -86,13 +130,22 @@ button{
 #Faceboook{
     background-color: rgb(80,124,192);
 }
-
+.button_area{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
 button .icon{
    vertical-align: middle;
 }
 
 button p {
    display: inline;
+   font-size: 10px;
+   color:white;
+}
+#sign-up-text{
+    margin: 30px 0 0 0;
 }
 
 .input_container{
@@ -100,11 +153,13 @@ button p {
     height: 30px;
     position: relative;
     margin: 20px 0;
+    flex-basis: 20px;
+    justify-content: center;
 }
 .input_container .icon{
     position: absolute;
     z-index: 1;
-    top:25%;
+    top:40%;
     left: 10px;
     height:18px;
 }
@@ -113,9 +168,19 @@ button p {
    width:100%; 
    height: 30px;
    border-radius: 20px;
-   border: 1px solid black;
+   border: 0.2px solid rgb(158, 157, 157);
    padding: 2px 0;
+   text-indent: 40px;
+   text-decoration: none;
 }
+.input_container input:valid{
+border-color: green;
+}
+.input_container input:invalid{
+    border-color: red;
+}
+
+
 .input_container input::placeholder{
     position: absolute;
     vertical-align:center;
@@ -126,23 +191,30 @@ button p {
 #signup{
     background-image: linear-gradient(30deg,rgb(242,159,5),30%,rgb(153,113,40));
     padding: 7px 40px;
+    margin-top: 20px;
+    border:0.2px solid rgb(157,157,157);
+    color:white;
+}
+#signup:hover{
+    cursor: pointer;
+    background-image:none;
+    background-color: rgb(131, 153, 111);
+    transform: scale(1.1);
 }
 
-/* form input{
-    display: block;
-    position: relative;
-    
-}
-input::placeholder{
-    position:relative;
-    color:red;
-    left: 8px;
+
+
+footer{
+display: flex;
+position: absolute;
+bottom: 0px;
+width:96%;
+left:2%;
+justify-content: space-between;
+align-items: center;
 }
 
-form .icon {
-    position: absolute;
-    z-index: 1;
-    height:17px;
-    align-items: center;  
+#help{
+    height:30px;
+    vertical-align: center;
 }
- */

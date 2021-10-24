@@ -5,7 +5,6 @@ body {
     color:rgb(100, 100, 100)
 }
 html{
-    /* background-color: blue; */
     background: linear-gradient(45deg,rgb(242,196,111),rgb(54,113,214,65%));
     height: 100%;
 }
@@ -102,14 +101,11 @@ width: 40%;
     color:rgb(36, 34, 34)
 }
 .form_el_cont h1+p{
-    /* width: 150px; */
     text-align: center;
     margin-bottom: 30px;
 }
-/* Buttons */
 button .icon{
     height:20px;
-    /* display: inline; */
     position: relative;
 }
 button{
